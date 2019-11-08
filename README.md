@@ -6,16 +6,16 @@ Add feature
 ![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/add_feature.png)
 
 Update and delete feature
-![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/update_dalete_feature.png)
+![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/update_delete_feature.png)
 
 Search feature
 ![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/search.png)
 
 Plotting start
-![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting start.png)
+![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_start.png)
 
 Plotting with Euclidean distance algorithmus
-![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting ed_algo.png)
+![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_ed_algo.png)
 
 Plotting with slope distance algorithmus
-![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting sp_algo.png)
+![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_sp_algo.png)
