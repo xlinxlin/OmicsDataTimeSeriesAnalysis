@@ -7,7 +7,7 @@ Das Ziel war die Entwicklung eines neues Webtools zur Exploration von Zeitserien
 Angular, Highcharts, DataTable
 
 ## Back-End
-Srping boot
+Spring boot
 
 ## Database
 MySQL
