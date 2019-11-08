@@ -18,4 +18,4 @@ Plotting with Euclidean distance algorithmus
 ![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_ed_algo.png)
 
 Plotting with slope distance algorithmus
-![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_sp_algo.png)
+![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_sd_algo.png)
