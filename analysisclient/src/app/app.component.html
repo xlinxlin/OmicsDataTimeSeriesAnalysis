@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/plot">Plot</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Actions
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/features">Show feature list</a>
+          <a class="dropdown-item" href="/add">Add feature</a>
+        </div>
+      </li>
+    </ul>
+    <input [(ngModel)]="featureName" class="mr-sm-2" type="search" placeholder="Feature Name" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="onSearch(featureId)">Search</button>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!--<app-output-graph></app-output-graph>-->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

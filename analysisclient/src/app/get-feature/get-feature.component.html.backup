@@ -1,0 +1,61 @@
+<div *ngIf="ifMsg" class="alert alert-danger" role="alert">
+    Feature not found. ({{errors.error.error}}, {{errors.error.status}})
+</div>
+<div>
+<form>
+<table *ngIf="!ifMsg" class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">0 min</th>
+        <th scope="col">10 min</th>
+        <th scope="col">30 min</th>
+        <th scope="col">60 min</th>
+        <th scope="col">120 min</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <!--<input type="text" placeholder="{{ feature?.id }}">-->
+          {{ feature?.id }}
+        </td>
+        <td>
+          <input type="text" class="form-control" placeholder="{{ feature?.name }}" [(ngModel)]="feature.name" name="name">
+          <!--{{ feature?.name }}-->
+        </td>
+        <td>
+          <input [(ngModel)]="feature.value1" name="val1" type="text" class="form-control" placeholder="{{ feature?.value1.toFixed(4) }}">
+          <!--{{ feature?.value1.toFixed(4) }}-->
+        </td>
+        <td>
+          <input [(ngModel)]="feature.value2" name="val2" type="text" class="form-control" placeholder="{{ feature?.value2.toFixed(4) }}">
+          <!--{{ feature?.value2.toFixed(4) }}-->
+        </td>
+        <td>
+          <input [(ngModel)]="feature.value3" name="val3" type="text" class="form-control" placeholder="{{ feature?.value3.toFixed(4) }}">
+          <!--{{ feature?.value3.toFixed(4) }}-->
+        </td>
+        <td>
+          <input [(ngModel)]="feature.value4" name="val4" type="text" class="form-control" placeholder="{{ feature?.value4.toFixed(4) }}">
+          <!--{{ feature?.value4.toFixed(4) }}-->
+        </td>
+        <td>
+          <input [(ngModel)]="feature.value5" name="val5" type="text" class="form-control" placeholder="{{ feature?.value5.toFixed(4) }}">
+          <!--{{ feature?.value5.toFixed(4) }}-->
+        </td>
+        <td>
+          <button type="button" class="btn btn-link" (click)="onUpdate(feature)">Update</button>
+          <!--<button type="button" class="btn btn-link" (click)="onDelete(feature)">Delete</button>-->
+        </td>
+        <td>
+          <button type="button" class="btn btn-link" (click)="onDelete(feature)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </form>
+</div>

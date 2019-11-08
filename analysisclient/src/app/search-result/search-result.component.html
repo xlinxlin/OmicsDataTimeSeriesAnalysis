@@ -1,0 +1,32 @@
+<div *ngIf="ifMsg" class="alert alert-danger" role="alert">
+  {{error}}
+</div>
+
+<div class="card my-5">
+  <div class="card-body">
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">0 min</th>
+          <th scope="col">10 min</th>
+          <th scope="col">30 min</th>
+          <th scope="col">60 min</th>
+          <th scope="col">120 min</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let feature of features">
+          <td><a href="/features/{{ feature?.id }}">{{ feature?.id }}</a></td>
+          <td>{{ feature?.name }}</td>
+          <td>{{ feature?.value1.toFixed(4) }}</td>  
+          <td>{{ feature?.value2.toFixed(4) }}</td>
+          <td>{{ feature?.value3.toFixed(4) }}</td>
+          <td>{{ feature?.value4.toFixed(4) }}</td>
+          <td>{{ feature?.value5.toFixed(4) }}</td>        
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

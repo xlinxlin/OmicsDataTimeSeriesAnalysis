@@ -1,0 +1,48 @@
+<div *ngIf="ifMsg" class="alert alert-danger" role="alert">
+  {{error}}
+</div>
+<div *ngIf="!ifMsg">
+  <div>
+    <a href="/features"> --> Back to feature list.</a>
+  </div>
+  <form (ngSubmit)="onUpdate(feature)" ngNativeValidate>
+    <div class="form-group row">
+      <label for="featureName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" [(ngModel)]="feature.name" name="name" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="val1" class="col-sm-2 col-form-label">0 min Value</label>
+      <div class="col-sm-10">
+        <input type="number" step="any" class="form-control" id="val1" [(ngModel)]="feature.value1" name="val1" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="val2" class="col-sm-2 col-form-label">10 min Value</label>
+      <div class="col-sm-10">
+        <input type="number" step="any" class="form-control" id="val2" [(ngModel)]="feature.value2" name="val2" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="val3" class="col-sm-2 col-form-label">30 min Value</label>
+      <div class="col-sm-10">
+        <input type="number" step="any" class="form-control" id="val3" [(ngModel)]="feature.value3" name="val3" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="val4" class="col-sm-2 col-form-label">60 min Value</label>
+      <div class="col-sm-10">
+        <input type="number" step="any" class="form-control" id="val4" [(ngModel)]="feature.value4" name="val4" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="val5" class="col-sm-2 col-form-label">120 min Value</label>
+      <div class="col-sm-10">
+        <input type="number" step="any" class="form-control" id="val5" [(ngModel)]="feature.value5" name="val5" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="button" class="btn btn-danger" (click)="onDelete(feature)">Delete</button>
+  </form>
+</div>
