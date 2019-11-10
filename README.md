@@ -7,7 +7,7 @@ Das Ziel war die Entwicklung eines neues Webtools zur Exploration von Zeitserien
 Angular, Highcharts, DataTable
 
 ## Back-End
-Spring boot
+Spring Boot
 
 ## Database
 MySQL
@@ -29,8 +29,8 @@ Search feature
 Plotting start
 ![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_start.png)
 
-Plotting with Euclidean distance algorithmus
+Plotting with Euclidean distance algorithm
 ![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_ed_algo.png)
 
-Plotting with slope distance algorithmus
+Plotting with slope distance algorithm
 ![image](https://github.com/xlinxlin/OmicsDataTimeSeriesAnalysis/blob/master/image/plotting_sd_algo.png)
