@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.data.annotation.Transient;
+
 /**
  * This is the Feature class. Each feature has a name, an ID and 5 values. 
  * 
@@ -46,6 +48,7 @@ public class Feature {
   private String name;
   
   /** Initializes feature score. */
+  @Transient
   private double score;
    
   /**
